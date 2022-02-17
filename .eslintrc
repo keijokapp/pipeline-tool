@@ -1,0 +1,56 @@
+extends: airbnb
+
+plugins:
+  - react
+
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+
+overrides:
+  - files: ["webpack.config.js", "src/**"]
+    rules:
+      import/no-extraneous-dependencies: ["error", {}]
+  - files: ["src/**", "react-dom/**"]
+    env:
+      browser: true
+    parserOptions:
+      ecmaFeatures:
+        jsx: true
+
+rules:
+  array-callback-return: off
+  arrow-parens: ["error", "as-needed"]
+  comma-dangle: ["error", "never"]
+  consistent-return: off
+  default-case: off
+  eqeqeq: ["error", "always", { "null": "ignore" }]
+  func-names: off
+  indent: ["error", "tab"]
+  import/extensions: ["error", "always"]
+  import/no-commonjs: error
+  jsx-a11y/click-events-have-key-events: off
+  jsx-a11y/no-noninteractive-element-interactions: off
+  jsx-a11y/no-static-element-interactions: off
+  react/jsx-indent: ["error", "tab"]
+  react/jsx-indent-props: ["error", "tab"]
+  max-len: off
+  no-await-in-loop: off
+  no-confusing-arrow: off
+  no-console: off
+  no-param-reassign: off
+  no-plusplus: off
+  no-restricted-exports: off
+  no-restricted-syntax: off
+  no-shadow: off
+  no-tabs: ["error", { allowIndentationTabs: true }]
+  no-use-before-define: off
+  react/jsx-filename-extension: off
+  react/jsx-one-expression-per-line: off
+  react/jsx-props-no-spreading: off
+  react/jsx-uses-react: warn
+  react/jsx-uses-vars: warn
+  react/no-array-index-key: off
+  react/no-danger: off
+  react/prop-types: off
+  no-underscore-dangle: off

@@ -1,0 +1,42 @@
+{
+  "type": "module",
+  "name": "pipeline-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack --mode production",
+    "start-client": "webpack serve --mode development",
+    "lint": "eslint *.js src lib"
+  },
+  "author": "Keijo Kapp <keijo.kapp@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@svgr/webpack": "^6.2.1",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.1.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-touch-backend": "^16.0.1",
+    "react-dom": "^18.1.0",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.5",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2",
+    "zustand": "^3.7.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "react-reconciler": "^0.28.0",
+    "winston": "^3.7.2"
+  }
+}
